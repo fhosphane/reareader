@@ -38,5 +38,8 @@ jobs:
       - name: Build frontend
         run: npm run build
 
+      - name: Install Tauri CLI
+        run: cargo install tauri-cli
+
       - name: Build Tauri
         run: cargo tauri build
